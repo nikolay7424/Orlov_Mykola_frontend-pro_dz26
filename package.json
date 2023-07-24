@@ -1,0 +1,26 @@
+{
+  "name": "orlov_mykola_frontend-pro_dz26",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "test",
+    "sass" : "sass scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikolay7424/Orlov_Mykola_frontend-pro_dz26.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikolay7424/Orlov_Mykola_frontend-pro_dz26/issues"
+  },
+  "homepage": "https://github.com/nikolay7424/Orlov_Mykola_frontend-pro_dz26#readme",
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.0",
+    "moment": "^2.29.4",
+    "sass": "^1.64.0"
+  }
+}

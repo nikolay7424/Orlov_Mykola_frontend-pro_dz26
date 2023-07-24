@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script defer src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="node_modules/moment/moment.js"></script>
+  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+
+  <div class="container px-4 mt-5 text-center">
+    <h2>bootstrap:</h2>
+    <div class="row gx-5">
+      <div class="col">
+        <div class="p-3">
+          <span data-bs-toggle="tooltip" data-bs-title="click to show info">
+            <button data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-toggle="tooltip"
+              class="btn btn-primary">Some info</button>
+          </span>
+        </div>
+      </div>
+      <div class="col">
+        <div class="p-3">
+          <button class="btn btn-primary" id="liveAlertBtn">show/hide
+            alert</button>
+        </div>
+        <div class="p-3 p-r">
+          <div id="liveAlertPlaceholder"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br><br><br>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti saepe placeat aliquam et, nesciunt tenetur
+          ipsa voluptatem nihil dolorem quibusdam beatae fugiat dolor veritatis quia sed sunt a officiis autem velit,
+          similique atque maxime? Quis dicta enim illum consequuntur, quaerat quibusdam doloribus, tempora rerum quidem
+          ea libero eum, repellat qui?
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container px-4 mt-5 text-center">
+    <h2>momentJS:</h2>
+    <div class="row gx-5">
+      <div class="col">
+        <div class="p-3">
+          <p>my birthday: <br><span id="b-day"></span></p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="p-3">
+          <div class="mb-3">
+            <label for="bday-input" class="form-label">your birthday:</label>
+            <input type="date" class="form-control" id="bday-input">
+          </div>
+          <p id="your-b-day"></p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="p-3">
+          <div class="mb-3">
+            <form class="row needs-validation" novalidate>
+              <label for="bday-input-text" class="form-label">your birthday in format
+                DD-MM-YYYY</label>
+              <input type="text" class="form-control" id="bday-input-text">
+              <div class="valid-feedback">
+                correct!
+              </div>
+              <div class="invalid-feedback">
+                invalid date format, must be something like: 24-07-2023
+              </div>
+              <button type="submit" class="btn btn-primary custom-btn">submit</button>
+            </form>
+          </div>
+          <p id="your-b-day-text"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+</body>
+
+</html>
